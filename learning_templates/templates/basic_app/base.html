@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Base</title>
+    <!-- CSS only -->
+</head>
+<body>
+<nav class="nav">
+
+  <a class="navbar-brand" href ="{% url 'index'  %} ">Base</a>
+  <a class="nav-link" href="{% url 'admin:index' %}">Admin</a>
+  <a class="nav-link" href="{% url 'basic_app:other' %}">Other</a>
+  <a class="nav-link disabled">Disabled</a>
+</nav>
+
+<div class="container">
+    {% block body_block %}
+
+    {% endblock %}
+</div>
+</body>
+</html>
